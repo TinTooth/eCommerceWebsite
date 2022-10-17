@@ -5,12 +5,6 @@
     padding: 0;
     box-sizing: inherit;
 }
-
-body {
-zoom: normal;
-
-}
-
 .h1 {
     font-size: 45px;
 }
@@ -24,13 +18,21 @@ zoom: normal;
     font-size: 20px;
 }
 
-
+.light {
+    font-weight: lighter;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-kerning: 50;
-
+}
+.fixed-nav{
+    width: 100%;
+    height:10vh ;
+    background-color: white;
+    position: fixed;
+    z-index: 300;
 }
 .nav-container{
     display: flex;
@@ -38,7 +40,7 @@ html {
     margin: auto;
     width: 90%;
     height: 10vh; 
-    padding-top: 10px;
+    padding-top: 10px;   
 }
 .nav-bar-container{
     display: flex;
@@ -46,13 +48,11 @@ html {
     width: 100%;
     height: 5vh;
 }
-
 .menu-container{
     display: flex;
     align-items: center;
     width: auto;
     height: auto;
-    
 }
 .black-bar {
     width: 100%;
@@ -67,7 +67,6 @@ html {
     object-fit: contain;
 
 }
-
 .menu-box{
     display: block;
     color: black;
@@ -84,8 +83,6 @@ html {
 .menu-box a:visited {
     color: black;
 }
-
-
 .search-bar{
     border: 1px solid;
     width: 175px;
@@ -94,12 +91,10 @@ html {
     border-color: black;
     margin-right: 10px;
 }
-
-.home-img {
-max-width: 100%;
-max-height: 100%;
+.search-img{
+    height: 100%;
+    float: right;
 }
-
 .home{
     background-image: linear-gradient(to right, transparent 60%, black 85%),
     linear-gradient(to left,transparent 60%, black 85%),
@@ -111,9 +106,8 @@ max-height: 100%;
     height:  65vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;  
+    justify-content: space-around; 
 }
-
 .home-text-box1{
     height: auto;
     width: 25%;
@@ -121,47 +115,41 @@ max-height: 100%;
     margin-right: 10%;
     
 }
-
 .home-text-box2{
     height: auto;
     width: 25%;
     margin-top: 15%;
     margin-left: 20%;
 }
-
 .white{
     color: white;
     font-weight: lighter;
 }
-
 .about-us-container{
     width: 100%;
-    height: 115vh;
-    /* background-color: grey; */
+    height: 100vh;
 }
-
-.about-us-line{
+.section-heading{
     width: 60vw;
     height: auto;
     margin-left: 5%;
     padding-top: 10vh;
 }
-
 .about-text-box1{
     width: 55%;
     float: left;
     margin-left: 8vw;
     margin-top: 3vw;
 }
-
 .about-right-image-container{
     width: 30vw;
-    height: 100vh;
+    height: 60vh;
     float:right;
     margin-right: 2vw;
     margin-top: 3vh;
+    background-color: grey;
+    position: relative;
 }
-
 
 .about-left-image-container{
     width: 20vw;
@@ -171,16 +159,15 @@ max-height: 100%;
     margin-left: 5vw;
     margin-top: 5vh;
 }
-
 .flip-image{
     transform: scalex(-1);
 }
-.contain-image{
+.cover-image{
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     
 }
-
 .about-text-box2{
     display: flex;
     align-self: center;
@@ -190,5 +177,79 @@ max-height: 100%;
     padding-top: 3vh;
     width: 38%;
     height: 50vh;
+}
+
+.our-products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 23vw;
+    height: 65vh;
+    background-color: white;
+}
+.product-image{
+    width: 100%;
+    height: 55%;
+    background-color: black;
+}
+.product-name{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: white;
+    margin-top: 1vh;
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    height: 10%;
+    background-color: white;
+}
+.product-description{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+
+.product-learn{
+    display: flex;
+    align-items: center;
+    width:50%;
+    height: 10%;
+    color: rgb(191, 118, 49);
+    background-color: white;
+    text-decoration: underline;
+}
+
+
+.product-add-cart{
+    width: 50%;
+    height: 10%;
+    background-color: darkgray;
     
+}
+
+.orange {
+    color: rgb(191, 118, 49);
+}
+
+.add-to-cart-box{
+    width: 75%;
+    height: 75%;
+    background-color: orange;
+
 }

@@ -9,34 +9,37 @@
 </head>
 <body>
     <nav>
-        <div class = "nav-container">
-            <div class = "nav-bar-container">
-                <div class = "menu-container">  
-                    <p class = "menu-box h3"><a href="#">HOME</a></li>
-                    <p class = "menu-box h3"><a href="#">ABOUT</a></li>
-                    <p class = "menu-box h3"><a href="#">PRODUCTS</a></li>
-                    <p class = "menu-box h3"><a href="#">CONTACT</a></li>
-                </div>
+        <div class = "fixed-nav">
+            <div class = "nav-container">
+                <div class = "nav-bar-container">
+                    <div class = "menu-container">  
+                        <p class = "menu-box h3"><a href="#1">HOME</a></li>
+                        <p class = "menu-box h3"><a href="#2">ABOUT</a></li>
+                        <p class = "menu-box h3"><a href="#3">PRODUCTS</a></li>
+                        <p class = "menu-box h3"><a href="#4">CONTACT</a></li>
+                    </div>
 
-                <div class = "menu-container">
-                    <p class = "h2">CARA</p>
-                    <img class = "nav-img" src="assets/icons8-pottery-96.png" alt="cara logo">
-                    <p class = "h2" >CARA</p>
-                </div>
+                    <div class = "menu-container">
+                        <p class = "h2">CARA</p>
+                        <img class = "nav-img" src="assets/icons8-pottery-96.png" alt="cara logo">
+                        <p class = "h2" >CARA</p>
+                    </div>
 
-                <div class = "menu-container">
-                    <p class = "search-bar"></p>
-                    <img class = "nav-img" src="assets/1200px-Google_Magnifying_Glass.svg.png" alt="eyeglass">
-                    <p class = "h3">CART (O)</p>
+                    <div class = "menu-container">
+                        <div class = "search-bar">
+                            <img class = "search-img" src="assets/1200px-Google_Magnifying_Glass.svg.png" alt="eyeglass">
+                        </div>
+                        <p class = "h3">CART (O)</p>
+                    </div>
                 </div>
+                <div class = "black-bar"></div>
             </div>
-            <div class = "black-bar"></div>
         </div>
         
 
     </nav>
     <section>
-        <div class = "home">
+        <div id = 1 class = "home">
             <div class = "home-text-box1 white">
                 <p class ="h1"> CERAMICS CRAFTED BY HAND...</p>
             </div>
@@ -48,8 +51,8 @@
 
     <section>
         <div class = "about-us-container">
-            <div class = about-us-line>
-                <p class = "h1">ABOUT US</p>
+            <div id = 2 class = "section-heading h1">
+                <p>ABOUT US</p>
                 <div class = "black-bar"></div>
             </div>
            
@@ -58,10 +61,10 @@
             </div>    
             
             <div class = "about-right-image-container">
-                <img  class = "contain-image flip-image" src="assets/Cylinder_unglazed3_2048x2048.jpg" alt=" large pot with plant">
+                <img  class = "cover-image flip-image" src="assets/Cylinder_unglazed3_2048x2048.jpg" alt=" large pot with plant">
             </div>
             <div class = "about-left-image-container">
-                <img class = "contain-image" src="assets/Vase_Dame_2048x2048.jpg" alt="vase plant angled right">
+                <img class = "cover-image" src="assets/Vase_Dame_2048x2048.jpg" alt="vase plant angled right">
             </div>
             
             <div class = "about-text-box2">
@@ -69,7 +72,48 @@
                 <p class = "p"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, </p>
             </div>
         </div>
+    </section>
 
+    <section id = 3>
+        <div class = "section-heading h1">
+            <p>OUR PRODCUTS</p>
+            <div class = "black-bar"></div>
+        </div>
+        <div class = "our-products-container">
+           <div class = "product-container">
+                <div class = "product-image"><img class = "cover-image" src="assets/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt=" Mundo Bowls"></div>   
+                <div class = "product-name h2 "> 
+                    <p>MUNDO BOWLS</p>
+                    <div class = "black-bar"></div>     
+                </div>
+                <div class = "product-price h2 ">
+                    <p> $48.00</p>
+                </div>
+                <div class = "product-description p light">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos aperiam odio blanditiis, fuga unde suscipit libero esse nam deserunt porro veritatis vero eaque?</p>
+                </div>
+                <div class = "product-learn h3">
+                    <p class = "orange">LEARN MORE</p>
+                </div>
+                <div class = "product-add-cart">
+                    <p class = "add-to-cart-box"></p>
+                </div>
+           </div>
+
+           <div class = "product-container">
+                <div class = "product-image"><img class = "cover-image" src="assets/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt=" Mundo Bowls"></div>   
+                <div class = "product-name"></div>
+                <div class = "product-price"></div>
+                <div class = "product-description"></div>
+                <div class = "product-learn"></div>
+                <div class = "product-add-cart"></div>
+            </div>
+
+            <div class = "product-container">
+                <p>test
+                </p>
+            </div>
+        </div>
     </section>
     
 
